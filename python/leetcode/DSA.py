@@ -1,3 +1,7 @@
+import matplotlib.pyplot as plt
+plt.
+print("matplotlib works")
+
 def two_sum(nums, target):
     hashmap ={}
     for i, num in enumerate(nums):
