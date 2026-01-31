@@ -9,7 +9,7 @@ public class ReorderLinkedList {
         ListNode second = slow.next;
         slow.next=null;
 
-        ListNode newSecond = reverse(second);
+        ListNode newSecond = ReverseLinkedList.reverseList(second);
 
         ListNode first = head;
         while (newSecond !=null) {

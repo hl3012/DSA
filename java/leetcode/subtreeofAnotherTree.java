@@ -4,6 +4,6 @@ public class subtreeofAnotherTree {
         if(root==null) return false;
         boolean res =sameTree.isSameTree(root, subRoot);
         if (res) return true;
-        return sameTree.isSameTree(root.left, subRoot)||sameTree.isSameTree(root.right, subRoot);;
+        return sameTree.isSameTree(root.left, subRoot)||sameTree.isSameTree(root.right, subRoot);
     }
 }
