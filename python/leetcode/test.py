@@ -1,19 +1,27 @@
 domain = [1,2,3,4]
-variables = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
-path = [-1]*len(variables) #index maps 0->A, 1->B...
+# variables = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+variables = ['F', 'H', 'C', 'D', 'G', 'E', 'A', 'B']
+path = [-1]*len(variables) #index means 0->A, 1->B...
 solutions = []
 failingCount=[0]
-count=0
 
 def is_valid():
-    A=path[0]
-    B=path[1]
+    # A=path[0]
+    # B=path[1]
+    # C=path[2]
+    # D=path[3]
+    # E=path[4]
+    # F=path[5]
+    # G=path[6]
+    # H=path[7]
+    A=path[6]
+    B=path[7]
     C=path[2]
     D=path[3]
-    E=path[4]
-    F=path[5]
-    G=path[6]
-    H=path[7]
+    E=path[5]
+    F=path[0]
+    G=path[4]
+    H=path[1]
     #A>G
     if A!=-1 and G!=-1:
         if A<=G: return False
@@ -100,3 +108,4 @@ def dfs(level, draw):
 dfs(0,"")
 print(solutions)
 print(failingCount[0])
+  
